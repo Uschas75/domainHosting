@@ -1,0 +1,128 @@
+body{
+
+  font-weight:400;
+  /*font-size: 16rem;*/
+  line-height: 1.7;
+
+}
+.text-white{
+  color: $color-white!important;
+}
+
+.header__search{
+    &-heading {
+      color: $color-white;
+      letter-spacing: 1rem;
+      font-size: 3.8rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+
+      @include respond(tab-land){
+        letter-spacing: .6rem;
+        font-size: 3.5rem;
+      }
+      @include respond(tab-port){
+        letter-spacing: .8rem;
+        font-size: 3.2rem;
+      }
+      @include respond(phone){
+        letter-spacing: .8rem;
+        font-size: 3rem;
+      }
+    }
+}
+.heading-secondary{
+  font-size:3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right,
+  $color-primary-light,
+  $color-primary-dark);
+  //color on the text with the help of background
+  -webkit-background-clip:text;
+  color: transparent;
+  letter-spacing:.2rem;
+  transition: all .2s;
+
+  &:hover {
+    transform:skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($color-primary-dark,.2);
+  }
+}
+.heading-tertiary{
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right,
+          $color-primary-light,
+          $color-primary-dark);
+  //color on the text with the help of background
+  -webkit-background-clip:text;
+  color: transparent;
+}
+.header__logo-box .header__logo{
+  font-size: 10rem;
+  @include respond(tab-land){
+    font-size: 11rem;
+  }
+  @include respond(tab-port){
+    font-size: 8.2rem;
+  }
+  @include respond(phone){
+    font-size: 7rem;
+  }
+}
+
+.section-help {
+
+  &__text {
+    padding: 5rem 6rem;
+
+    &__details {
+      top: 0;
+      padding: 4rem;
+
+      &-1 {
+        font-size: 4.5rem;
+        color: $color-white;
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 3rem;
+      }
+
+      &-2 {
+        font-size: 2rem;
+        color: $color-white;
+        font-weight: 400;
+        text-align: left;
+      }
+    }
+
+    &__contact {
+
+      &__card {
+        background-image: linear-gradient(180deg, rgba($color-primary-light, .5), rgba($color-primary, .5));
+        padding: 3rem;
+        border-radius: .8rem;
+
+        &-1 {
+          display: block;
+          font-size: 3rem;
+          color: $color-white;
+          font-weight: 700;
+          text-align: left;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+
+  }
+}
+
+
+

@@ -1,0 +1,26 @@
+.section-help{
+  background-image: linear-gradient(180deg,rgba($color-white , .3) ,rgba($color-primary, .3) );
+  z-index: 2;
+
+  &__text{
+    display: table;
+    position: relative;
+    &__details{
+      display: table-cell;
+      width: 50%;
+        &-1{
+          display: block;
+        }
+        &-2{
+          display: block;
+        }
+    }
+    &__contact{
+      display: table-cell;
+      width: 50%;
+      position: absolute;
+      top: 3rem;
+      left:48%;
+    }
+  }
+}

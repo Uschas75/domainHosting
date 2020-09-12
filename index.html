@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Domain hosting landing page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--navigation-->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon"> &nbsp; </span>
+        </label>
+
+        <div class="navigation__background"> &nbsp; </div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#home" class="navigation__link"><span>01</span> Home</a></li>
+                <li class="navigation__item"><a href="#section-offer" class="navigation__link"><span>02</span> Packages</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link"><span>03</span> Help</a></li>
+                <li class="navigation__item"><a href="#section-service" class="navigation__link"><span>04</span>Services</a></li>
+                <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>05</span> Stories</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <header class="header" id="home">
+        <div class="header__logo-box">
+            <i class="fab fa-ioxhost heading-secondary header__logo"></i>
+        </div>
+        <div class="header__contact">
+            <div class="header__contact__sign">
+                <input type="text" id="sign" class="header__contact__sign-input">
+                <label for="sign" class="header__contact__sign-label">Sign In</label>
+            </div>
+            <div class="header__contact__log">
+                <input type="text" id="log" class="header__contact__log-input">
+                <label for="log" class="header__contact__log-label">Log In</label>
+            </div>
+        </div>
+        <!--domain search input field with check box-->
+        <div class="header__search">
+            <h1 class="header__search-heading">SECURE WEB HOSTING</h1>
+            <form action="#" method="get">
+                <div class="header__search__domain">
+                    <input type="text" id="domain" class="header__search__domain-input" placeholder="search for domain">
+                    <label for="domain" class="header__search__domain-label"><i class="fas fa-search header__search__domain-icon"></i></label>
+                </div>
+                <div class="header__search__checkbox">
+
+                        <div class="header__search__checkbox-option">
+                            <input type="checkbox"  name="vehicle1" id="vehicle1" class="header__search__checkbox-input" value="Bike">
+                            <label for="vehicle1" class="header__search__checkbox-label">.com <span class="header__search__checkbox-dollar">  $.59</span></label><br>
+                        </div>
+                        <div class="header__search__checkbox-option">
+                            <input type="checkbox"  name="vehicle2"  id="vehicle2" class="header__search__checkbox-input" value="Car">
+                            <label for="vehicle2" class="header__search__checkbox-label"> .net <span class="header__search__checkbox-dollar">  $.59</span></label><br>
+                        </div>
+                        <div class="header__search__checkbox-option">
+                            <input type="checkbox"  name="vehicle3"  id="vehicle3" class="header__search__checkbox-input" value="Boat" checked>
+                            <label for="vehicle3" class="header__search__checkbox-label">.org <span class="header__search__checkbox-dollar">  $.59</span></label><br><br>
+                        </div>
+                        <div class="header__search__checkbox-option">
+                            <input type="checkbox"  name="vehicle4"  id="vehicle4" class="header__search__checkbox-input" value="Boat" checked>
+                            <label for="vehicle4" class="header__search__checkbox-label"> .us <span class="header__search__checkbox-dollar">  $.59</span></label><br><br>
+                        </div>
+                        <div class="header__search__checkbox-option">
+                            <input type="checkbox"  name="vehicle5"  id="vehicle5" class="header__search__checkbox-input" value="Boat" checked>
+                            <label for="vehicle5" class="header__search__checkbox-label"> .in <span class="header__search__checkbox-dollar">  $.59</span></label><br><br>
+                        </div>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <main>
+
+        <!--section for available offers-->
+        <section id="section-offer" class="section-offer u-margin-top-huge">
+            <div class="u-text-center u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Exciting plans for many people
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+
+                            <h4 class="card__heading">
+                               <span class="card__heading-span card__heading-span--1">
+                                   Started
+                               </span>
+                            </h4>
+
+                            <div class="card__details">
+                                <ul>
+                                    <li> 2,5 GB web space</li>
+                                    <li> Free site buiding tools</li>
+                                    <li> Free domain registar</li>
+                                    <li> 24/7 Support</li>
+                                    <li>Free marketing tool</li>
+                                    <li>  99,9% Services uptime</li>
+                                    <li> 30 day money back</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="card__side  card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">monthly</p>
+                                    <p class="card__price-value">  $15.90</p>
+                                </div>
+                                <a href="#" class="btn2 btn2--white">choose plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+
+                            <h4 class="card__heading">
+                               <span class="card__heading-span card__heading-span--2">
+                                    Premium
+                               </span>
+                            </h4>
+
+                            <div class="card__details">
+                                <ul>
+                                    <li> 2,5 GB web space</li>
+                                    <li> Free site buiding tools</li>
+                                    <li> Free domain registar</li>
+                                    <li> 24/7 Support</li>
+                                    <li>Free marketing tool</li>
+                                    <li>  99,9% Services uptime</li>
+                                    <li> 30 day money back</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="card__side  card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">monthly</p>
+                                    <p class="card__price-value">$35.99</p>
+                                </div>
+                                <a href="#" class="btn2 btn2--white">choose plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+
+                            <h4 class="card__heading">
+                               <span class="card__heading-span card__heading-span--3">
+                                    dedicated
+                               </span>
+                            </h4>
+
+                            <div class="card__details">
+                                <ul>
+                                    <li> 2,5 GB web space</li>
+                                    <li> Free site buiding tools</li>
+                                    <li> Free domain registar</li>
+                                    <li> 24/7 Support</li>
+                                    <li>Free marketing tool</li>
+                                    <li>  99,9% Services uptime</li>
+                                    <li> 30 day money back</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="card__side  card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">monthly</p>
+                                    <p class="card__price-value">$50.99</p>
+                                </div>
+                                <a href="#" class="btn2 btn2--white">choose plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="u-text-center u-margin-top-big">
+                <a href="#" class="btn2 btn2--primary">Discover all plans</a>
+            </div>
+        </section>
+
+        <!--video with help section-->
+        <section id="contact" class="section-help u-margin-top-huge">
+            <div class="bg-video">
+                <div class="section-help__text">
+                    <div class="section-help__text__details">
+                        <span class="section-help__text__details-1">24 Hour Expert Support</span>
+                        <span class="section-help__text__details-2 ">We operate one of the most advanced 100 Gbit networks in the world, complete with Anycast support.</span>
+                    </div>
+                    <div class="section-help__text__contact">
+                        <div class="row">
+                            <div class="col-1-of-2 section-help__text__contact__card">
+                                <i class="fas fa-phone-volume section-help__text__contact__card-1"></i>
+                                <span class="section-help__text__contact__card-1">+10 367 456 3678</span>
+                            </div>
+                            <div class="col-1-of-2 section-help__text__contact__card">
+                                <i class="far fa-comment section-help__text__contact__card-1"></i>
+                                <span class="section-help__text__contact__card-1">Chat with experts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    not supported
+                </video>
+            </div>
+        </section>
+
+        <!--section-services-->
+        <section  class="section-service u-margin-top-huge" id="section-service">
+            <div class="u-text-center">
+                <h1 class="heading-secondary">Why us ?</h1>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3 u-text-center section-service__card">
+                    <div>
+                        <i class="fas fa-cloud-download-alt section-service__card__icon"></i>
+                    </div>
+                    <div>
+                        <h3 class="heading-tertiary">Super Fast server</h3>
+                        <p class="section-service__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci consequaturquo suscipit tempore veniam.
+                        </p>
+                    </div>
+                    <a href="#popup" class="btn2 btn2--primary btn2--animated">Details</a>
+                </div>
+
+                <div class="col-1-of-3 u-text-center section-service__card">
+                    <div>
+                        <i class="fas fa-boxes section-service__card__icon"></i>
+                    </div>
+                    <div>
+                        <h3 class="heading-tertiary">daily backup</h3>
+                        <p class="section-service__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci consequaturquo suscipit tempore veniam.
+                        </p>
+                    </div>
+                    <a href="#popup" class="btn2 btn2--primary btn2--animated">Details</a>
+                </div>
+
+                <div class="col-1-of-3 u-text-center section-service__card">
+                    <div>
+                        <i class="fas fa-cogs section-service__card__icon"></i>
+                    </div>
+                    <div>
+                        <h3 class="heading-tertiary">technical services</h3>
+                        <p class="section-service__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci consequaturquo suscipit tempore veniam.
+                        </p>
+                    </div>
+                    <a href="#popup" class="btn2 btn2--primary btn2--animated">Details</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3 u-text-center section-service__card">
+                    <div>
+                        <i class="fas fa-shield-alt section-service__card__icon"></i>
+                    </div>
+                    <div>
+                        <h3 class="heading-tertiary">secure and reliable</h3>
+                        <p class="section-service__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci consequaturquo suscipit tempore veniam.
+                        </p>
+                    </div>
+                    <a href="#popup" class="btn2 btn2--primary btn2--animated">Details</a>
+                </div>
+
+                <div class="col-1-of-3 u-text-center section-service__card">
+                    <div>
+                        <i class="fas fa-ambulance section-service__card__icon"></i>
+                    </div>
+                    <div>
+                        <h3 class="heading-tertiary">24/7 supports</h3>
+                        <p class="section-service__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci consequaturquo suscipit tempore veniam.
+                        </p>
+                    </div>
+                    <a href="#popup" class="btn2 btn2--primary btn2--animated">Details</a>
+                </div>
+
+                <div class="col-1-of-3 u-text-center section-service__card">
+                    <div>
+                        <i class="fas fa-undo-alt section-service__card__icon"></i>
+                    </div>
+                    <div>
+                        <h3 class="heading-tertiary">Dns control</h3>
+                        <p class="section-service__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci consequaturquo suscipit tempore veniam.
+                        </p>
+                    </div>
+                    <a href="#popup" class="btn2 btn2--primary btn2--animated">Details</a>
+                </div>
+            </div>
+        </section>
+
+        <!--section customer review-->
+        <section id="section-stories" class="section-stories u-margin-top-huge">
+            <div class="u-text-center u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    We make people genuinely happy
+                </h2>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="https://i.postimg.cc/mrsFMZND/client.jpg" alt="post_image" class="story__image">
+                        <figcaption class="story__caption">
+                            Marry smith
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small"> dolor sit amet, consectetur adipisicing.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi autem
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorum eaque est porro reprehenderit. Ab accusantium ad
+                            aspernatur, cumque quasi saepe, temporibus! consequatur dolor itaque molestias neque odit, qui quis voluptate!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="https://i.postimg.cc/mrsFMZND/client.jpg" alt="post_image" class="story__image">
+                        <figcaption class="story__caption">
+                            joe doe
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small"> dolor sit amet, consectetur adipisicing.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi autem
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorum eaque est porro reprehenderit. Ab accusantium ad
+                            aspernatur, cumque quasi saepe, temporibus! consequatur dolor itaque molestias neque odit, qui quis voluptate!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-text-center u-margin-top-big">
+                <a href="#" class="btn2-text">Read all stories &rarr;</a>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="https://i.postimg.cc/3RYS5qq4/white-concrete-house-near-body-of-water-under-white-and-blue-1285625.jpg" alt="the popup img2" class="popup__img">
+                <img src="https://i.postimg.cc/wBg7MfgR/grayscale-photo-of-computer-laptop-near-white-notebook-and-169573.jpg" alt="the popup img1" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-service" class="popup__close"> &times; </a>
+                <h2 class="heading-secondary u-margin-bottom-small">most special feature </h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Lorem ipsum dolor sit.</h3>
+                <p class="popup__text">
+                    iente tenetur vero. Ad alias aspernatur atque blanditiis consequatur
+                    deserunt dignissimos, fugiat in maxime modi molestias
+                    non nulla obcaecati perferendis quae quidem quo rerum ullam.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam,
+                    cum dicta eaque eius et illum itaque iure magni nostrum odit quae quasi quisquam
+                    repudiandae sapiente tenetur vero. Ad alias aspernatur atque blanditiis consequatur
+                    deserunt dignissimos, fugiat in maxime modi molestias
+                    non nulla obcaecati perferendis quae quidem quo rerum ullam.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <i class="fab fa-ioxhost heading-secondary footer__logo"></i>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">carrers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">privacy policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Built my <a href="#" class="footer__link">uschas</a>
+                    for his project <a href="#" class="footer__link">Domain hosting landing page</a>
+                    copy right &copy; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, sapiente?
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<!--    <section class="grid-test">-->
+<!--        <div class="row">-->
+<!--            <div class="col-1-of-2">-->
+<!--                col 1 of 2-->
+<!--            </div>-->
+<!--            <div class="col-1-of-2">-->
+<!--                col 1 of 2-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-1-of-3">-->
+<!--                col 1 of 3-->
+<!--            </div>-->
+<!--            <div class="col-1-of-3">-->
+<!--                col 1 of 3-->
+<!--            </div>-->
+<!--            <div class="col-1-of-3">-->
+<!--                col 1 of 3-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-1-of-3">-->
+<!--                col 1 of 3-->
+<!--            </div>-->
+<!--            <div class="col-2-of-3">-->
+<!--                col 2 of 3-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-1-of-4">-->
+<!--                col 1 of 4-->
+<!--            </div>-->
+<!--            <div class="col-1-of-4">-->
+<!--                col 1 of 4-->
+<!--            </div>-->
+<!--            <div class="col-1-of-4">-->
+<!--                col 1 of 4-->
+<!--            </div>-->
+<!--            <div class="col-1-of-4">-->
+<!--                col 1 of 4-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-1-of-4">-->
+<!--                col 1 of 4-->
+<!--            </div>-->
+<!--            <div class="col-1-of-4">-->
+<!--                col 1 of 4-->
+<!--            </div>-->
+<!--            <div class="col-2-of-4">-->
+<!--                col 2 of 4-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-1-of-4">-->
+<!--                col 1 of 4-->
+<!--            </div>-->
+<!--            <div class="col-3-of-4">-->
+<!--                col 3 of 4-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+        <!-/end of grid system-->
+
+<script src="https://kit.fontawesome.com/34ff218b69.js" crossorigin="anonymous"></script>
+</body>
+</html>

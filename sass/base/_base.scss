@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before{
+  padding:0;
+  margin:0;
+  box-sizing:inherit;
+}
+
+
+body{
+  background-color: $color-dark-light;
+  box-sizing: border-box;
+  padding:3rem;
+  @include respond(tab-port){
+    padding:0;
+  }
+  @include respond(phone){
+    padding: 0;
+  }
+
+}
+html {
+  font-size: 62.5%; //10px
+  @include respond(tab-land){
+    font-size: 56.25%;//9px
+  }
+  @include respond(tab-port){
+    font-size: 50%;//8px
+  }
+  @include respond(phone){
+    font-size: 43.75%;//7px
+  }
+  @include respond(gorib-phone){
+    font-size: 25%;//7px
+  }
+  @include respond(big-desktop){
+    font-size: 75%;
+  }
+}

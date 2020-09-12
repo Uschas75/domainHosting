@@ -1,0 +1,36 @@
+.header{
+  height:95vh;
+  background-image:linear-gradient(
+                  to right bottom,
+                  rgba($color-grey-light, 1),
+                  rgba($color-primary, .7),
+                  rgba($color-grey-dark, 1)),
+                  url("https://i.postimg.cc/vZRr1bMp/header-image.jpg");
+    background-size:cover;
+    background-position: top;
+    position: relative;
+    -webkit-clip-path:polygon(0 0,100% 0,100% 76vh,0 100%);
+    clip-path:polygon(0 0,100% 0,100% 76vh,0 100%);
+
+
+
+    &__logo-box{
+      position: absolute;
+      top:1.7rem;
+      left:1.7rem;
+    }
+
+    &__contact{
+      position: absolute;
+      top:2.2rem;
+      right:12rem;
+
+
+
+    }
+    &__search{
+     @include absCenter;
+      text-align: center;
+
+    }
+}

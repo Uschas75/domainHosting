@@ -1,0 +1,190 @@
+.section-service__card{
+  -webkit-box-shadow: .2rem .3rem .5rem 0 $color-primary;
+  -moz-box-shadow: .2rem .3rem .5rem 0 $color-primary;
+  box-shadow: .2rem .3rem .5rem 0 $color-primary;
+  &__icon {
+    font-size: 10rem;
+    background-image: linear-gradient(to right,
+            $color-primary-light,
+            $color-primary-dark);
+    //color on the text with the help of background
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 2rem;
+  }
+  &__paragraph{
+    font-size:1.8rem;
+    padding: 3rem;
+    font-weight: 400;
+  }
+}
+
+
+//basic functionality
+.card{
+  perspective:150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 63rem;
+
+  &__side{
+
+    height: 63rem;
+    transition: all .8s ease;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+
+    -webkit-box-shadow: .2rem .3rem .5rem 0 $color-white;
+    -moz-box-shadow: .2rem .3rem .5rem 0 $color-white;
+    box-shadow: .2rem .3rem .5rem 0 $color-white;
+
+
+    &--front{
+      background-color: $color-dark-light;
+    }
+    &--back{
+
+      transform: rotateY(180deg);
+      &-1{
+        background-image: linear-gradient(to right bottom ,
+                $color-white ,
+                $color-primary,
+                $color-primary-dark);
+      }
+      &-2{
+        background-image: linear-gradient(to right bottom ,
+                $color-white ,
+                $color-primary,
+                $color-primary-dark);
+      }
+      &-3{
+        background-image: linear-gradient(to right bottom ,
+                $color-white ,
+                $color-primary,
+                $color-primary-dark);
+      }
+    }
+  }
+  //.card:hover .card__side
+  &:hover &__side--front{
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side--back{
+    transform: rotateY(0);
+  }
+
+  //front side styling
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path:polygon(0 0 , 100% 0 ,100% 85% ,0 100%) ;
+    clip-path:polygon(0 0 , 100% 0 ,100% 85% ,0 100%) ;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &--1{
+      background-image: linear-gradient(to right bottom ,
+              rgba($color-primary, .5),
+              rgba($color-primary-dark , .5) ),url("https://i.postimg.cc/BQ3St52P/image.jpg");
+    }
+    &--2{
+      background-image: linear-gradient(to right bottom ,
+              rgba($color-primary, .5),
+              rgba($color-primary-dark , .5) ),url("https://i.postimg.cc/sDJVWBJ6/dedicated-server-hosting-1.jpg");
+    }
+    &--3{
+      background-image: linear-gradient(to right bottom ,
+              rgba($color-primary, .5),
+              rgba($color-primary-dark , .5)) ,url("https://i.postimg.cc/R029mwMF/image.jpg");
+    }
+
+  }
+
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-align:right;
+    text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    top:17rem;
+    right:2rem;
+    width:75%;
+    @include respond(phone){
+      font-size: 1rem;
+      width: 50%;
+    }
+  }
+
+  &__heading-span{
+    padding:1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    @include respond(phone){
+      padding:.5rem .75rem;
+    }
+
+    &--1{
+      background-image: linear-gradient(to right bottom,
+              rgba( $color-primary, .85),
+              rgba($color-primary-dark, .85));
+    }
+    &--2{
+      background-image: linear-gradient(to right bottom,
+              rgba( $color-primary, .85),
+               rgba($color-primary-dark, .85));
+    }
+    &--3{
+      background-image: linear-gradient(to right bottom,
+              rgba( $color-primary, .85),
+              rgba($color-primary-dark, .85));
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+    ul{
+      list-style:none;
+      width:80%;
+      margin:0 auto;
+
+      li{
+        text-align: center;
+        font-size: 1.9rem;
+        padding: 1rem;
+        &:not(:last-child) {
+          border-bottom:1px solid $color-grey-light;
+        }
+      }
+    }
+  }
+  &__cta {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    width: 90%;
+    text-align:center;
+  }
+
+  &__price-box {
+
+    color:$color-white;
+    margin-bottom: 8rem;
+  }
+  &__price-only{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  &__price-value{
+    font-size: 6rem;
+    font-weight: 100;
+  }
+}
