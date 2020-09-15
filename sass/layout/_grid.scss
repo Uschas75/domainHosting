@@ -1,10 +1,8 @@
 .row{
   max-width:114rem;
   margin:5rem auto!important;
-
   &:not(:last-child){
     margin-bottom:$gutter-vertical!important;
-
   }
 
 
@@ -20,10 +18,24 @@
 
   .col-1-of-2{
     width:calc((100% - #{$gutter-horizontal})/2);
-
   }
   .col-1-of-3{
     width:calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    @include respond(tab-port){
+      width: 40vw;
+      height: auto;
+      margin: 5rem 2vw;
+    }
+    @include respond(phone){
+      width: 70vw;
+      height: auto;
+      margin: 5rem 15vw;
+    }
+    @include respond(gorib-phone){
+      width: 40vw;
+      height: auto;
+      margin: 5rem 2vw;
+    }
   }
   //.col-2-of-3{
   //  width:calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});

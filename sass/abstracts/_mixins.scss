@@ -32,7 +32,7 @@ ORDER :Base +typography > general layout +grid > page layout
 
 @mixin  respond($breakpoint){
   @if $breakpoint == gorib-phone{
-    @media only screen and (max-width: 25em){@content}//600px
+    @media only screen and (max-width: 27.5em){@content}//440px
   }
   @if $breakpoint == phone{
     @media only screen and (max-width: 37.25em){@content}//600px

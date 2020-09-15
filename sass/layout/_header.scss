@@ -12,6 +12,16 @@
     -webkit-clip-path:polygon(0 0,100% 0,100% 76vh,0 100%);
     clip-path:polygon(0 0,100% 0,100% 76vh,0 100%);
 
+    @include respond(phone){
+      height:60vh;
+      -webkit-clip-path:polygon(0 0,100% 0,100% 55vh,0 100%);
+      clip-path:polygon(0 0,100% 0,100% 45vh,0 100%);
+    }
+    @include respond(gorib-phone){
+      height:60vh;
+      -webkit-clip-path:polygon(0 0,100% 0,100% 45vh,0 100%);
+      clip-path:polygon(0 0,100% 0,100% 45vh,0 100%);
+    }
 
 
     &__logo-box{
@@ -26,10 +36,11 @@
       right:12rem;
 
 
-
     }
     &__search{
      @include absCenter;
+      width:78vw;
+      height: auto;
       text-align: center;
 
     }
